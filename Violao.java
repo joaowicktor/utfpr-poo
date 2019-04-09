@@ -6,21 +6,27 @@ public class Violao {
   private String madeira;
 
   // Métodos
-  public void entDados (String afi, String cor, String mad) {
-    if (afi.isEmpty() || cor.isEmpty() || mad.isEmpty()) {
-      System.out.println("Todos os dados devem ser informados");
-    } else {
-      this.afinacao = afi;
-      this.cor = cor;
-      this.madeira = mad;
-    }
+  public String getAfinacao() {
+     return this.afinacao;
   }
-  
-  public void saiDados () {
-    System.out.println("\nViolao");
-    System.out.println("================================");
-    System.out.println(" Afinacao: " + this.afinacao);
-    System.out.println(" Cor: " + this.cor);
-    System.out.println(" Tipo de Madeira: " + this.madeira + "\n");
+    
+  public String getCor() {
+    return this.cor;
+  }
+    
+  public String getMadeira() {
+    return this.madeira;
+  }
+    
+  public void setAfinacao(String afinacao) {
+    this.afinacao = afinacao;
+  }
+
+  public void setCor(String cor) {
+    this.cor = cor;    
+  }
+
+  public void setMadeira(String madeira) {
+    this.madeira = madeira;
   }
 }
