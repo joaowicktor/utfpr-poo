@@ -10,3 +10,4 @@ Um simples repositório para armazenas as implementações passadas nas aulas de
       - Objetos
       - Utilização do "this"
       - Encapsulamento
+      - Herança
