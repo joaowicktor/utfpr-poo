@@ -19,6 +19,7 @@ public class Principal {
     System.out.println("\nBanco: " + bancoItau.getNome());
     System.out.println("Conta: " + bancoItau.getContas().get(0).getNumero());
     System.out.println("Titular: " + bancoItau.getContas().get(0).getTitular().getNome());
-    System.out.println("Saldo: R$ " + String.format("%.2f", bancoItau.getContas().get(0).getSaldo()));
+    //System.out.println("Saldo: R$ " + String.format("%.2f", bancoItau.getContas().get(0).getSaldo()));
+    System.out.printf("Saldo: R$ %.2f", bancoItau.getContas().get(0).getSaldo());
   }
 }
